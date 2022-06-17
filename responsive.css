@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FF7978;
+    background-image: url("bg-intro-desktop.png");
+    font-family: 'Poppins',sans-serif;
+}
+main{
+    max-width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   padding: 150px;
+   margin: auto;
+
+   
+}
+.left{
+    color: white;
+    padding-right: 80px;
+    font-size: 1.5rem;
+}
+.left p{
+    flex-basis: 50%;  
+    font-size: 16px;
+}
+.right{  
+    
+    flex-basis: 50%;  
+    float: right;
+    margin-top: -50px;
+
+}
+.top-right{
+    color: white;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px hsla(0, 100%, 0%, 0.3) ;
+}
+.form{
+    background-color: white;
+    border-radius:5px;
+    padding: 20px;
+    font-family: 'Poppins',sans-serif;
+    box-shadow: 0px 5px hsla(0, 100%, 0%, 0.3) ;
+}
+.error-text{
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #FF7978;
+   
+}
+.error-icon{
+    display: block;
+    position: absolute;
+   
+   
+}
+input{
+    position: relative;
+    border: none;
+    border: 1px solid hsl(246, 25%, 77%);
+    width: 100%;
+    padding: 10px;
+    border-radius:5px;
+    margin: 6px;
+    font-family: 'Poppins',sans-serif;
+}
+input{
+    padding: 10px;
+    padding-left: 20px;
+    border-radius:5px;
+    border: none;
+    border: 1px solid hsl(249, 10%, 26%) ;
+    font-weight: bold;
+    
+}
+button{
+    border: none;
+    border-radius: 5px;
+    background: hsl(154, 59%, 51%);
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+}
+.note{
+    margin-top: 20px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+.note b{
+    color: #FF7978;
+    
+}
+
+/*Media-Query*/
+
+@media screen  and (max-width: 375px) {
+    body{
+        background-image: url("bg-intro-mobile.png");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       flex-direction: row;
+       text-align: center;
+    }
+}
